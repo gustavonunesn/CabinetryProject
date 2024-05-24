@@ -7,6 +7,7 @@ public class Caixote {
 	private Integer espessura;
 	private Integer espessuraFundo;
 	private Integer larguraBase;
+	private Integer larguraPorta;
 	
 	public Caixote(Double altura, Double largura, Double profundidadeModulo, Integer espessura, Integer espessuraFundo) {
 		this.altura = altura;
@@ -15,6 +16,7 @@ public class Caixote {
 		this.espessura = espessura;
 		this.espessuraFundo = espessuraFundo;
 		this.larguraBase = 30;
+		this.larguraPorta = 10;
 	}
 	
 	public void setLarguraBase(Integer larguraBase) {

@@ -11,7 +11,7 @@ public class Main {
 		
 		Caixote c = new Caixote(10.0,10.0,5.0,5,5);
 		
-		c.setLarguraBase(5);
+		
 		
 		System.out.println(c.baseCaixote());
 
