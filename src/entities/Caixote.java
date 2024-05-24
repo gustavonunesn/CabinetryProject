@@ -22,6 +22,9 @@ public class Caixote {
 	public void setLarguraBase(Integer larguraBase) {
 		this.larguraBase = larguraBase;
 	}
+	public void setLarguraPorta(Integer larguraPorta) {
+		this.larguraPorta = larguraPorta;
+	}
 	public String baseCaixote() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("2x {" + (largura - larguraBase) + "} " + "{" + profundidadeModulo + "} " + "{" + espessura + "}" );
