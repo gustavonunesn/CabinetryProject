@@ -17,7 +17,7 @@ public class Main {
 
 		System.out.println(c.lateralCaixote());
 
-		sc.close();
+		sc.close(); //teste do pull
 
 	}
 
