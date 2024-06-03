@@ -15,6 +15,8 @@ public class Main {
 		
 		System.out.println(c.baseCaixote());
 
+		System.out.println(c.lateralCaixote());
+
 		sc.close();
 
 	}
