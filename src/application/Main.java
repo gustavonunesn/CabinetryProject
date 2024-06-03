@@ -1,21 +1,21 @@
 package application;
-
-import java.util.Scanner;
-
 import entities.Caixote;
+import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		Caixote c = new Caixote(10.0,10.0,5.0,5,5);
+		Caixote c = new Caixote(1000.00,5000.00,500.00,15, 6);
 		
 		System.out.println(c.baseCaixote());
 		
 		c.setLarguraBase(5);
 		
 		System.out.println(c.baseCaixote());
+
+		sc.close();
 
 	}
 
