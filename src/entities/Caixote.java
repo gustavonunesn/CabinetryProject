@@ -34,20 +34,18 @@ public class Caixote {
 		.append(prefixo)
 		.append(df.format(dim1))
 		.append(" * ")
-		.append(dim2)
+		.append(df.format(dim2))
 		.append(" * ")
-		.append(dim3)
+		.append(df.format(dim3))
 		.toString();
 	}
 
-
 	public String baseCaixote() { 
-		return formatarDimensoes("2x ", largura - larguraBase, altura, espessura);
+		return formatarDimensoes("2x ", largura - larguraBase, profundidadeModulo, espessura) + " base";
 	}
+	
 	public String lateralCaixote() {
-		StringBuilder sb = new StringBuilder();
-		sb.append("2x " + df.format(altura) + " * " + df.format(profundidadeModulo) + " * " + espessura);
-		return sb.toString();
+		return formatarDimensoes("2x ", altura, profundidadeModulo, espessura) + " lateral";
 	}
 
 	/* public String fundoCaixote(){
