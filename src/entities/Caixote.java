@@ -47,9 +47,18 @@ public class Caixote {
 	public String lateralCaixote() {
 		return formatarDimensoes("2x ", altura, profundidadeModulo, espessura) + " lateral";
 	}
-
-	/* public String fundoCaixote(){
+	public String portaTempeiro() {
 		StringBuilder sb = new StringBuilder();
-		sb.append(0)
-	} */
+		sb.append("Lateral Caixa: 2x "+ altura + " * " + profundidadeModulo + " * " + espessura + " (1+/1-)\n");
+		sb.append("Base Caixa: 1x " + (largura - larguraBase) + " * " + profundidadeModulo + " * " + espessura + " (1+)\n");
+		sb.append("Batenta caixa: 1x " + (largura - larguraBase) + " * " + "60" + espessura + " (2+)\n");
+		sb.append("Frente caixa: 1x " + (altura - 45) + " * " + (largura - larguraPorta) + " * " + espessura + " (4L)\n");
+		sb.append("Maior lateral interna: 1x " + (altura - 105) + " * " + (profundidadeModulo - 50) + " * " + espessura + " (1+/1-)\n");
+		sb.append("Menor lateral interna: 2x 85" + " * " + (profundidadeModulo - 50) + " * " + espessura + " (1+/1-)\n");
+		sb.append("Frente verso interno: 4x 85 * " + (largura - 89) + " * " + espessura + " (1+)\n");
+		sb.append("Fundo tempeiro: 2x " + (profundidadeModulo - 50) + " * " + (largura - 89 + 15) + " * " + espessuraFundo + " (2+)\n");
+		return sb.toString();
+		
+	}
+
 }

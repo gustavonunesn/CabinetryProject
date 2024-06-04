@@ -9,14 +9,12 @@ public class Main {
 		
 		Caixote c = new Caixote(1000.00,1000.00,500.00,15, 6);
 		
-		System.out.println(c.baseCaixote());
 		
-		c.setLarguraBase(5);
-		
-		System.out.println(c.baseCaixote());
+		System.out.println("Base Caixote: " + c.baseCaixote());
 
-		System.out.println(c.lateralCaixote());
+		System.out.println("Lateral caixote: " + c.lateralCaixote());
 
+		System.out.println("Porta tempeiro: \n" + c.portaTempeiro());
 		
 
 	}
