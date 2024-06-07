@@ -1,11 +1,11 @@
 package entities.Caixote;
 
 public class Modulo {
-    private Double altura;
-    private Double largura;
-    private Double profundidade;
-    private Double espessura;
-    private Double espessuraFundo;
+    protected Double altura;
+    protected Double largura;
+    protected Double profundidade;
+    protected Double espessura;
+    protected Double espessuraFundo;
 
     public Modulo(Double altura, Double largura, Double profundidade, Double espessura, Double espessuraFundo) {
         this.altura = altura;
@@ -53,6 +53,11 @@ public class Modulo {
 
     public void setEspessuraFundo(Double espessuraFundo) {
         this.espessuraFundo = espessuraFundo;
+    }
+
+    @Override
+    public String toString() {
+        return "";
     }
 
 }

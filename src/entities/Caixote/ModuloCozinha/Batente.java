@@ -9,5 +9,4 @@ public class Batente extends Modulo {
         super(altura, largura, profundidade, espessura, espessuraFundo);
 
     }
-
 }
