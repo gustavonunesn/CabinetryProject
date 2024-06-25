@@ -15,6 +15,12 @@ public class Modulo {
         this.espessuraFundo = espessuraFundo;
     }
 
+    public Modulo(Double altura, Double largura, Double espessura) {
+        this.altura = altura;
+        this.largura = largura;
+        this.espessura = espessura;
+    }
+
     public Double getAltura() {
         return altura;
     }
