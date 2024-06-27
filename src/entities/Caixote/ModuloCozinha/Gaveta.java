@@ -5,7 +5,7 @@ import entities.Caixote.Modulo;
 public class Gaveta extends Modulo {
     // Implementar o que esta peça possuirá.
 
-    public Gaveta(Double altura, Double largura, Double profundidade, Double espessura, Double espessuraFundo) {
+    public Gaveta(Integer altura, Integer largura, Integer profundidade, Integer espessura, Integer espessuraFundo) {
         super(altura, largura, profundidade, espessura, espessuraFundo);
 
     }

@@ -4,10 +4,9 @@ import entities.Caixote.Modulo;
 
 public class Portas {
 
-    private Double altura;
-    private Double largura;
-    private Double espessura;
-    @SuppressWarnings("unused")
+    private Integer altura;
+    private Integer largura;
+    private Integer espessura;
     private Modulo modulo;
     
     public Portas(Modulo modulo) {
@@ -17,20 +16,39 @@ public class Portas {
         this.espessura = modulo.getEspessura();
     }
 
-    public Double getAltura(){
+    public Integer getAltura(){
         return this.altura;
     }
 
-    public double getLargura(){
+    public void setAltura(Integer altura) {
+        this.altura = altura;
+    }
+
+    public Integer getLargura(){
         return this.largura;
     }
+
+    public void setLargura(Integer largura){
+        this.largura = largura;
+    }
     
-    public double getEspessura(){
+    public Integer getEspessura(){
         return this.espessura;
     }
-    
-    public String imprimeMedidasUmaPorta() {
-        return String.format("Altura: %.2f, Largura: %.2f, Espessura: %.2f", altura - 10, largura - 10, espessura);
+
+    public void setEspessura(Integer Espessura){}
+
+    public Modulo getModulo(){
+        return this.modulo;
     }
     
+    public String imprimeMedidasUmaPortaComPuxador() {
+        return String.format("1x %d * %d * %d - Porta", altura - 45, largura - 10, espessura);
+    }
+
+    public String imprimeMedidasDuasPortasComPuxador(){
+        return String.format("2x %d * %d * %d - Portas", altura - 45, (largura / 2) - 5, espessura);
+    }
+    
+
 }

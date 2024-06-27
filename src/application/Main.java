@@ -6,8 +6,10 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Modulo modulo = new Modulo(1000.0, 500.0, 500.0, 15.0, 6.0);
+		Modulo modulo = new Modulo(1000, 500, 500, 15, 6);
 		Portas p = new Portas(modulo);
-		System.out.println(p.imprimeMedidasUmaPorta());
+		System.out.println(modulo.imprimeMedidasBaseESuperior());
+		System.out.println(p.imprimeMedidasUmaPortaComPuxador());
+		System.out.println(p.imprimeMedidasDuasPortasComPuxador());
 	}
 }
