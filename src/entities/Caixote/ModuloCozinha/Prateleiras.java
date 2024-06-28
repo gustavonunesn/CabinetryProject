@@ -45,7 +45,6 @@ public class Prateleiras {
 
     public String imprimeMedidasPrateleira() {
         return String.format("1x %d * %d * %d - Prateleira", largura - larguraAux, profundidade - profundidadeAux, espessura);
-
     }
 
 }
