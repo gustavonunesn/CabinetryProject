@@ -2,35 +2,70 @@ package entities.Caixote.ModuloCozinha;
 
 import entities.Caixote.Modulo;
 
-public class Gaveta extends Modulo {
-    // Implementar o que esta peça possuirá.
+public class Gaveta {
+    protected Integer altura;
+    protected Integer largura;
+    protected Integer profundidade;
+    protected Integer espessura;
+    protected Modulo modulo;
 
-    public Gaveta(Integer altura, Integer largura, Integer profundidade, Integer espessura, Integer espessuraFundo) {
-        super(altura, largura, profundidade, espessura, espessuraFundo);
-
+    public Gaveta(Modulo modulo) {
+        this.altura = modulo.getAltura();
+        this.largura = modulo.getLargura();
+        this.profundidade = modulo.getProfundidade();
+        this.espessura = modulo.getEspessura(); 
     }
 
-    public Double umaGaveta() {
+    public Integer getAltura(){
+        return this.altura;
+    }
+
+    public void setAltura(Integer altura) {
+        this.altura = altura;
+    }
+
+    public Integer getLargura(){
+        return this.largura;
+    }
+
+    public void setLargura(Integer largura) {
+        this.largura = largura;
+    }
+
+    public Integer getProfundidade(){
+        return this.profundidade;
+    }
+
+    public void setProfundidade(Integer profundidade) {
+        this.profundidade = profundidade;
+    }
+
+    public Integer getEspessura(){
+        return this.espessura;
+    }
+
+    public void setEspessura(Integer espessura) {
+        this.espessura = espessura;
+    }
+
+    public Integer umaGaveta() {
         return null;
     }
 
-    public Double duasGavetas() {
+    public Integer duasGavetas() {
         return null;
     }
 
-    public Double tresGavetas() {
+    public Integer tresGavetas() {
         return null;
     }
 
-    public Double quatroGavetas() {
+    public Integer quatroGavetas() {
         return null;
     }
 
-    public Double gaveta2mais1() {
+    public Integer gaveta2mais1() {
         return null;
     }
 
-    public Double portaTempeiros() {
-        return null;
-    }
 }

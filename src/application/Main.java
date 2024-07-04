@@ -17,6 +17,7 @@ public class Main {
 		System.out.println(p2.imprimeMedidasPrateleira());
 		//System.out.println(p.imprimeMedidasUmaPortaComPuxador())
 		System.out.println(p.imprimeMedidasDuasPortasComPuxador());
-	
+		System.out.println(p.imprimeMedidasUmaPortaSemPuxador());
+		System.out.println(p.imprimeMedidasDuasPortasSemPuxador());
 	}
 }
