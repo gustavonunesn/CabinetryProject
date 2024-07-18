@@ -69,7 +69,7 @@ public class Modulo {
     }
 
     public String imprimeMedidasBaseESuperior(){
-      return String.format("1x %d * %d * %d - Base e Superior", largura - larguraBase, profundidade, espessura); 
+      return String.format("2x %d * %d * %d - Base e Superior", largura - larguraBase, profundidade, espessura); 
     }
 
 }

@@ -1,5 +1,7 @@
 package entities.Caixote.ModuloCozinha;
 
+import java.util.Scanner;
+
 import entities.Caixote.Modulo;
 
 public class Gaveta {
@@ -8,12 +10,14 @@ public class Gaveta {
     protected Integer profundidade;
     protected Integer espessura;
     protected Modulo modulo;
+    protected Integer qtdGavetas;
 
-    public Gaveta(Modulo modulo) {
+    public Gaveta(Modulo modulo, Integer qtdGavetas) {
         this.altura = modulo.getAltura();
         this.largura = modulo.getLargura();
         this.profundidade = modulo.getProfundidade();
         this.espessura = modulo.getEspessura(); 
+        this.qtdGavetas = qtdGavetas;
     }
 
     public Integer getAltura(){
@@ -46,6 +50,35 @@ public class Gaveta {
 
     public void setEspessura(Integer espessura) {
         this.espessura = espessura;
+    }
+
+    public String gavetaPuxadorERodape()
+    {
+        if(qtdGavetas == 1) {
+            Integer subAltura = altura - 45; // 5mm de cima e de baixo, e 35 do puxador
+            Integer fundoGaveta = largura - 57;
+
+            return String.format("2x %d * %d * %d", altura, largura - 10, espessura);
+
+            
+        }
+        
+        return "teste";
+    }
+
+    public String gavetaPuxadorSemRodape()
+    {
+        return "teste";
+    }
+
+    public String gavetaSemPuxadorSemRodape()
+    {
+        return "teste";
+    }
+
+    public String gavetaSemPuxadorComRodape()
+    {
+        return "teste";
     }
 
     public Integer umaGaveta() {

@@ -1,6 +1,7 @@
 package application;
 import entities.Caixote.Modulo;
 import entities.Caixote.ModuloCozinha.Batente;
+import entities.Caixote.ModuloCozinha.Gaveta;
 import entities.Caixote.ModuloCozinha.Portas;
 import entities.Caixote.ModuloCozinha.Prateleiras;
 
@@ -17,7 +18,5 @@ public class Main {
 		System.out.println(p2.imprimeMedidasPrateleira());
 		//System.out.println(p.imprimeMedidasUmaPortaComPuxador())
 		System.out.println(p.imprimeMedidasDuasPortasComPuxador());
-		System.out.println(p.imprimeMedidasUmaPortaSemPuxador());
-		System.out.println(p.imprimeMedidasDuasPortasSemPuxador());
 	}
 }

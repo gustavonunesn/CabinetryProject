@@ -43,17 +43,18 @@ public class Portas {
     }
     
     public String imprimeMedidasUmaPortaComPuxador() {
-        return String.format("1x %d * %d * %d - Porta", altura - 45, largura - 10, espessura);
-    }
-
-    public String imprimeMedidasDuasPortasComPuxador(){
-        return String.format("2x %d * %d * %d - Portas", altura - 45, (largura / 2) - 5, espessura);
+        return String.format("1x %d * %d * %d - Porta c/ puxador", altura - 45, largura - 10, espessura);
     }
 
     public String imprimeMedidasUmaPortaSemPuxador() {
-        return String.format("1x %d * %d * %d - Porta", altura - 10, largura - 10, espessura);
+        return String.format("1x %d * %d * %d - Porta s/ puxador", altura - 10, largura - 10, espessura);
     }
+
+    public String imprimeMedidasDuasPortasComPuxador(){
+        return String.format("2x %d * %d * %d - Portas c/ puxador", altura - 45, (largura / 2) - 5, espessura);
+    }
+        
     public String imprimeMedidasDuasPortasSemPuxador(){
-        return String.format("2x %d * %d * %d - Portas", altura - 10, (largura / 2) - 5, espessura);
+        return String.format("2x %d * %d * %d - Portas s/ puxador", altura - 10, (largura / 2) - 5, espessura);
     }
 }
