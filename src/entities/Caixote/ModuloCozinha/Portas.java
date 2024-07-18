@@ -8,15 +8,15 @@ public class Portas {
     private Integer largura;
     private Integer espessura;
     private Modulo modulo;
-    
-    public Portas(Modulo modulo) {
+
+    public Portas(Modulo modulo) { // FEITO
         this.modulo = modulo;
         this.altura = modulo.getAltura(); // Exemplo de como definir a altura da porta com base no módulo
         this.largura = modulo.getLargura(); // Exemplo de como definir a largura da porta com base no módulo
         this.espessura = modulo.getEspessura();
     }
 
-    public Integer getAltura(){
+    public Integer getAltura() {
         return this.altura;
     }
 
@@ -24,24 +24,25 @@ public class Portas {
         this.altura = altura;
     }
 
-    public Integer getLargura(){
+    public Integer getLargura() {
         return this.largura;
     }
 
-    public void setLargura(Integer largura){
+    public void setLargura(Integer largura) {
         this.largura = largura;
     }
-    
-    public Integer getEspessura(){
+
+    public Integer getEspessura() {
         return this.espessura;
     }
 
-    public void setEspessura(Integer Espessura){}
+    public void setEspessura(Integer Espessura) {
+    }
 
-    public Modulo getModulo(){
+    public Modulo getModulo() {
         return this.modulo;
     }
-    
+
     public String imprimeMedidasUmaPortaComPuxador() {
         return String.format("1x %d * %d * %d - Porta c/ puxador", altura - 45, largura - 10, espessura);
     }
@@ -50,11 +51,11 @@ public class Portas {
         return String.format("1x %d * %d * %d - Porta s/ puxador", altura - 10, largura - 10, espessura);
     }
 
-    public String imprimeMedidasDuasPortasComPuxador(){
+    public String imprimeMedidasDuasPortasComPuxador() {
         return String.format("2x %d * %d * %d - Portas c/ puxador", altura - 45, (largura / 2) - 5, espessura);
     }
-        
-    public String imprimeMedidasDuasPortasSemPuxador(){
+
+    public String imprimeMedidasDuasPortasSemPuxador() {
         return String.format("2x %d * %d * %d - Portas s/ puxador", altura - 10, (largura / 2) - 5, espessura);
     }
 }

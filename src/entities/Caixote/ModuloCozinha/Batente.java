@@ -10,7 +10,7 @@ public class Batente {
     protected Integer espessura;
     protected Modulo modulo;
 
-    public Batente(Modulo modulo) {
+    public Batente(Modulo modulo) { // FEITO
         this.largura = modulo.getLargura();
         this.larguraAuxiliar = 30;
         this.profundidade = modulo.getProfundidade();
@@ -21,5 +21,4 @@ public class Batente {
     public String imprimeMedidasBatente() {
         return String.format("1x %d * %d * %d - Batente", largura - larguraAuxiliar, profundidadeAuxiliar, espessura);
     }
-    // Implementar o que esta peça possuirá.
 }

@@ -10,7 +10,7 @@ public class Prateleiras {
     protected Integer espessura;
     protected Modulo modulo;
 
-    public Prateleiras(Modulo modulo) {
+    public Prateleiras(Modulo modulo) { // FEITO
         this.modulo = modulo;
         this.largura = modulo.getLargura();
         this.larguraAux = 30;
@@ -19,32 +19,33 @@ public class Prateleiras {
         this.espessura = modulo.getEspessura();
     }
 
-    public Integer getLargura(){
+    public Integer getLargura() {
         return this.largura;
     }
 
     public void setLargura(Integer largura) {
         this.largura = largura;
     }
-    
-    public Integer getProfundidade(){
+
+    public Integer getProfundidade() {
         return this.profundidade;
     }
 
-    public void setProfundidade(Integer profundidade){
+    public void setProfundidade(Integer profundidade) {
         this.profundidade = profundidade;
     }
 
-    public Integer getEspessura(){
+    public Integer getEspessura() {
         return this.espessura;
     }
 
-    public void setEspessura(Integer espessura){
+    public void setEspessura(Integer espessura) {
         this.espessura = espessura;
     }
 
     public String imprimeMedidasPrateleira() {
-        return String.format("1x %d * %d * %d - Prateleira", largura - larguraAux, profundidade - profundidadeAux, espessura);
+        return String.format("1x %d * %d * %d - Prateleira", largura - larguraAux, profundidade - profundidadeAux,
+                espessura);
     }
 
 }
